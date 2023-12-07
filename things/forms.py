@@ -11,5 +11,5 @@ class ThingForm (forms.Form):
       widgets = {
          'name' : forms.CharField(validators=[MaxLengthValidator(limit_value=35)]),
          'description' : forms.Textarea(),
-         'quantity' : forms.NumberInput(validators=[MinValueValidator(limit_value=0), MaxValueValidator(limit_value=50)])
+         'quantity' : forms.NumberInput()
       }
