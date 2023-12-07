@@ -4,7 +4,7 @@ from django.core.validators import MinValueValidator, MaxLengthValidator, MaxVal
 """Forms of the project."""
 
 # Create your forms here.
-class ThingForm (forms.Form):
+class ThingForm (forms.ModelForm):
    class Meta:
       model = Thing
       fields = ['name', 'description', 'quantity']
