@@ -9,7 +9,6 @@ class ThingForm (forms.ModelForm):
       model = Thing
       fields = ['name', 'description', 'quantity']
       widgets = {
-         'name' : forms.CharField(validators=[MaxLengthValidator(limit_value=35)]),
          'description' : forms.Textarea(),
          'quantity' : forms.NumberInput()
       }
